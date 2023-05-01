@@ -12,4 +12,5 @@ function show(){
 }
 function close(){
     linkList.style.top = '-200%'
+    linkList.style.display = 'none'
 }

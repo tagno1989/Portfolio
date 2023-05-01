@@ -11,5 +11,5 @@ function show(){
     linkList.style.top = '0';
 }
 function close(){
-    linkList.style.top = '-100%'
+    linkList.style.top = '-200%'
 }

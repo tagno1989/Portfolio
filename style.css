@@ -1,0 +1,349 @@
+/* dev styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+body::-webkit-scrollbar-thumb {
+    color: navy;
+}
+
+a, ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* main {
+    border: 5px solid red;
+} */
+footer {
+    border: 5px solid purple;
+}
+section {
+    /* border: 5px solid green; */
+    height: 100vh;
+    
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: rgba(173, 216, 230, 0.47);
+}
+main {
+    flex: 1;
+}
+/* dev styles end */
+
+
+
+/* header styles start */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.link-list {
+    display: flex;
+    gap: 8px;
+}
+
+header {
+    background-image: url(./Downloads/blurry-gradient-haikei.png);
+    background-size: cover;
+    box-shadow: 5px 5px 10px lightgrey;
+    position: sticky;
+    top: -12px;
+}
+
+
+
+/* Hamburger Menu */
+nav .openMenu {
+    font-size: 2em;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu  {
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
+}
+i {
+    visibility: hidden;
+}
+@media(max-width:800px) {
+    .title {
+        padding-top: 25px;
+    }
+    nav .link-list {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./Downloads/blurry-gradient-haikei.png);
+        background-size: cover;
+        transition: top 1s ease;
+        display: none;
+        gap: 50px;
+    }
+    nav .link-list .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .link-list a:hover {
+        background: none;
+        color: rgba(173, 216, 230);
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    i {
+        display: inline-block;
+        color: aliceblue;
+        padding: 26px;
+        visibility: visible;
+        cursor: pointer;
+    }
+}
+/* hamburger end */
+
+
+
+/* header styles end */
+
+
+/* About section start */
+
+.section1 {
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Wave-Picture.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about_text_box {
+    background: rgba(173, 216, 230, 0.7);
+    width: 400px;
+    height: 250px;
+    overflow: scroll;
+    box-shadow: 1px 1px 10px lightgray;
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18.9px 6px 6px 6px;;
+}
+
+.about_head {
+    margin: 0 33% 5% 0;
+    color: black;
+    font-size: 26px;
+    font-weight: bolder;
+    background: rgba(173, 216, 230, 0.47);
+    box-shadow: 1px 1px 10px lightgray;
+    border-radius: .5em;
+    padding: 6px;
+}
+
+
+@media(max-width:425px) {
+    .about_text_box{
+        width: 200px;
+    }
+}
+/* about section end */
+
+
+
+
+/* project section start*/
+
+.section2 {
+    height: auto;
+    width: auto;
+}
+
+.projects {
+    padding: 6px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(173, 216, 230);
+}
+.projects {
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.box {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+@media(min-width: 1000px){
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 12px;
+    }
+}
+/* slider bar start */
+
+.box {
+    position: static;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+}
+.images img {
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+}
+.dots label {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: solid black 3px;
+    cursor: pointer;
+    transition: all .25s ease;
+    margin: 2px;
+}
+.dots label:hover {background: black;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: 0;
+}
+#img4:checked ~ .m4 {
+    margin-left: -100%;
+}
+#img5:checked ~ .m5 {
+    margin-left: 0;
+}
+#img6:checked ~ .m6 {
+    margin-left: -100%;
+}
+#img7:checked ~ .m7 {
+    margin-left: 0;
+}
+#img8:checked ~ .m8 {
+    margin-left: -100%;
+}
+#img9:checked ~ .m9 {
+    margin-left: -200%;
+}
+
+/* slider bar end */
+
+/* project end */
+
+
+
+/* text styles start */
+
+
+
+/* nav text styles start */
+.title {
+    font-weight: 900;
+    color: white;
+    font-size: 28px;
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: lightcyan;
+}
+a:hover {
+    background-color: rgba(173, 216, 230, 0.47);
+    transition: .5s ease;
+    padding: 6px;
+}
+/* nav text styles end */
+
+
+
+/* About text styles start */
+
+
+
+/* About text styles end */
+
+
+
+/* project text styles start */
+
+.project-head {
+    padding: 6px;
+    margin: 6px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder; 
+    background-image: url(./Downloads/blurry-gradient-haikei.png);
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(173, 216, 230);
+}
+
+.project-text {
+    padding: 8px;
+    border: inset rgba(173, 216, 230);
+    border-radius: 10px;
+    font-weight: bolder;
+    line-height: 1.25;
+}
+
+
+
+/* project text styles end */
+
+/* nav text styles end */
+
+

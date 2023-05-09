@@ -8,7 +8,7 @@ openMenu.addEventListener('click', () =>{
     linkList.show(linkList.style.display = 'flex', linkList.style.top = '0')
 });
 closeMenu.addEventListener('click', () => {
-    linkList.close(linkList.style.top = '-100%')
+    linkList.close(linkList.style.top = '-125%')
 });
 
 

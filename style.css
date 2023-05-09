@@ -171,7 +171,6 @@ i {
 @media(max-width:425px) {
      .about_text_box{
         width: auto;
-        padding-top: 25%;
     }
     
 }

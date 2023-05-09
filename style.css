@@ -3,6 +3,9 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+body{
+    width: 100vw;
+}
 
 body::-webkit-scrollbar-track {
     background: black;
@@ -21,7 +24,8 @@ button {
 }
 
 section {
-    height: 100vh;  
+    height: 100vh;
+    width: 100vw;  
 }
 body {
     display: flex;
@@ -166,7 +170,7 @@ i {
 
 @media(max-width:425px) {
      .about_text_box{
-        width: 300px;
+        width: auto;
         padding-top: 25%;
     }
     
@@ -293,6 +297,10 @@ p i {
 
 
 /* contact section start */
+.section3 {
+    height: auto;
+    width: auto;
+}
 .contact-head {
     background-image: url(./Downloads/blurry-gradient-haikei.png);
     background-size: cover;
@@ -365,7 +373,7 @@ dialog::backdrop {
 footer {
     background-image: url(./Downloads/blurry-gradient-haikei.png);
     background-size: cover;
-    height: 150px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

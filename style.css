@@ -82,11 +82,16 @@ i {
     }
     nav .link-list {
         height: 100vh;
+        /* better? */
+        width: 50%;
+        /* better? */
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
-        z-index: 10;
+        /*fix?  */
+        z-index: 100;
+        /* fix? */
         flex-direction: column;
         justify-content: center;
         align-items: center;

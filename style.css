@@ -16,7 +16,9 @@ a, ul {
     text-decoration: none;
     list-style-type: none;
 }
-
+button {
+    cursor: pointer;
+}
 
 section {
     height: 100vh;  
@@ -138,12 +140,13 @@ i {
 }
 .about_text_box {
     background: rgba(173, 216, 230, 0.7);
-    width: 400px;
+    width: 375px;
     height: 250px;
     overflow: scroll;
     box-shadow: 1px 1px 10px lightgray;
     border-radius: .5em;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 18.9px 6px 6px 6px;;
@@ -160,14 +163,12 @@ i {
     padding: 6px;
 }
 
-
 @media(max-width:425px) {
-    .about_text_box{
-        width: 200px;
+     .about_text_box{
+        width: 300px;
+        padding-top: 25%;
     }
-    .p {
-        padding-top: 150%;
-    }
+    
 }
 /* about section end */
 
@@ -291,6 +292,28 @@ p i {
 
 
 /* contact section start */
+.contact-head {
+    background-image: url(./Downloads/blurry-gradient-haikei.png);
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 2;
+    box-shadow: 5px 5px 10px rgba(173, 216, 230);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;   
+}
+
+.heading-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6px;
+}
 
 form {
     height: 500px;
@@ -302,6 +325,36 @@ form {
     background-image: url(./Downloads/blob-haikei\ \(4\).png);
     background-size: 800px;
 }
+
+dialog {
+    width: 200px;
+    height: 150px;
+    background-image: url(./Downloads/blurry-gradient-haikei.png);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightgrey;
+    text-align: center;
+    
+}
+.btns {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+}
+
+dialog > div > button {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 8px 10px 8px 10px;
+}
+dialog::backdrop {
+    background-color: rgba(173, 216, 230, 0.32);
+}
+
+
 
 /* contact section end */
 
@@ -351,7 +404,10 @@ a:hover {
 
 /* About text styles start */
 
-
+.fa-hand {
+    visibility: visible;
+    color: white;
+}
 
 /* About text styles end */
 
@@ -417,26 +473,17 @@ form > button {
     width: 100px;
 }
 
-.contact-head {
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    background-size: cover;
+dialog > p {
     color: white;
-    border-radius: 10px;
-    width: 150px;
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 2;
-    box-shadow: 5px 5px 10px rgba(173, 216, 230);
+    line-height: 1.5;
+    font-size: 18px;
 
-    display: flex;
-    justify-content: center;
-    align-content: center;   
 }
-.heading-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6px;
+
+
+dialog > div > button {
+    font-size: 16px;
+    font-weight: bolder;
 }
 /* contact text styles end */
 

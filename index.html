@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/21354b95c3.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
 </head>
 <body>
     <!-- Header -->
@@ -24,6 +25,9 @@
                 <a href="#Project">Projects</a>
                 <a href="#Contact">Contact</a>
                 <a href="#foot">Bottom</a> 
+                <a href="https://github.com/tagno1989">
+                    <i class="devicon-github-original"></i>                            
+                </a>
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
@@ -33,9 +37,22 @@
         
         <!-- About -->
         <section class="section1" id="About">
-                <h2 class="about_head">About Me</h2>
+                <h2 class="about_head">About Jacob</h2>
                 <div class="about_text_box">
-                    <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus minima dolore officiis quia laudantium incidunt, consequuntur culpa nihil porro molestiae similique ab quidem explicabo possimus labore? Vel eveniet culpa possimus sapiente veritatis dolor asperiores tempore excepturi laborum ad, et ab veniam accusantium blanditiis nesciunt debitis earum itaque, distinctio rem. Quam natus excepturi eligendi, sint harum nobis tenetur quis eum ad qui laudantium tempora consequatur, tempore provident reiciendis voluptas. Obcaecati beatae dolorum distinctio tempora nulla porro, eos exercitationem quibusdam eaque voluptas ut dicta enim error harum expedita vitae! Nihil sit odit voluptatem repudiandae aliquam dolores neque ea ullam error, magni itaque?</p>
+                    <p> Resume and p2-3 Cover Letter
+                        <a href="./Downloads/Resume Jacob Warren.pdf">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </p>
+                    <p class="p">
+                        As a self-taught web developer, I have found far more of a drive to learn than I did in traditional school.  
+                        With the constant need to find information on my self-taught journey, the skill of do-diligent research is essential.  
+                        I am constantly researching and trying to develop the best questions possible.  
+                        In order to flow through a lesson or concept on my project that does not make sense.  
+                        The self-taught path is not easy but it has taught me many things, too not give up, in or out to the pressures of learning something new and all alone. 
+                        I've found learning takes time and patience, then the stress becomes just a fun challenge to overcome or something silly to laugh at later. 
+                    </p>
+                    <i class="fa-regular fa-hand"></i>
                 </div>
             
         </section>
@@ -59,7 +76,7 @@
                         <label for="img2"></label>
                     </div>
                         <p class="project-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, ipsa? Culpa voluptatem officiis commodi itaque ullam debitis quo est, minus distinctio ut odio voluptates. Laudantium. 
-                            <a href="https://github.com/tagno1989/Landing_Page">
+                            <a  href="https://github.com/tagno1989/Landing_Page">
                                 <i class="devicon-github-original"></i>                            
                             </a>
                             <a href="https://tagno1989.github.io/Landing_Page/">
@@ -150,7 +167,14 @@
                 <input type="text" name="Name" placeholder="Full Name" required>
                 <input type="email" name="Email" placeholder="Email" required>
                 <textarea name="Message" placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
+                <button data-open-modal type="button">Send</button>
+                <dialog data-modal>
+                    <p class="modal-text">Send a message?</p>
+                    <div class="btns">
+                        <button data-close-modal type="button">Cancel</button>
+                        <button type="submit">Send</button>
+                    </div>
+                </dialog>
             </form>
         </section>
     </main>

@@ -1,554 +1,516 @@
 /* dev styles */
 * {
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
-
 
 body::-webkit-scrollbar-track {
-    background: black;
-    
+  background: black;
 }
 body::-webkit-scrollbar-thumb {
-    color: navy;
+  color: navy;
 }
 
-a, ul {
-    text-decoration: none;
-    list-style-type: none;
+a,
+ul {
+  text-decoration: none;
+  list-style-type: none;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 section {
-    height: 100vh;
-    width: 100vw;  
+  height: 100vh;
+  width: 100vw;
 }
 /* sticky footer */
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: #bfdbfe;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #bfdbfe;
 }
 main {
-    flex: 1;
+  flex: 1;
 }
 /* dev styles end */
 
-
-
 /* header styles start */
 .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px;
 }
 
 .link-list {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 header {
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    background-size: cover;
-    box-shadow: 5px 5px 10px lightgrey;
-    position: sticky;
-    top: -12px;
+  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-size: cover;
+  box-shadow: 5px 5px 10px lightgrey;
+  position: sticky;
+  top: -12px;
 }
-
-
 
 /* Hamburger Menu */
 nav .openMenu {
-    font-size: 2em;
-    margin: 2px;
-    display: none;
-    cursor: pointer;
+  font-size: 2em;
+  margin: 2px;
+  display: none;
+  cursor: pointer;
 }
 
-nav .closeMenu  {
-    font-size: 2em;
-    display: none;
-    cursor: pointer;
+nav .closeMenu {
+  font-size: 2em;
+  display: none;
+  cursor: pointer;
 }
 i {
-    visibility: hidden;
+  visibility: hidden;
 }
-@media(max-width:800px) {
-    .title {
-        padding-top: 2px;
-    }
-    nav .link-list {
-        height: 100vh;
-        width: 50%;
-        position: fixed;
-        top: -125%;
-        right: 0;
-        left: 0;
-        z-index: 100;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url(./Downloads/blurry-gradient-haikei.png);
-        background-size: cover;
-        transition: top 1s ease;
-        display: none;
-        gap: 50px;
-    }
-    nav .link-list .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    nav .openMenu {
-        display: block;
-    }
-    nav .link-list a:hover {
-        background: none;
-        color: rgba(173, 216, 230);
-        font-size: 1.6em;
-        font-weight: bold;
-    }
-    i {
-        display: inline-block;
-        color: aliceblue;
-        padding: 26px;
-        visibility: visible;
-        cursor: pointer;
-    }
+@media (max-width: 800px) {
+  .title {
+    padding-top: 2px;
+  }
+  nav .link-list {
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: -125%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Downloads/blurry-gradient-haikei.png);
+    background-size: cover;
+    transition: top 1s ease;
+    display: none;
+    gap: 50px;
+  }
+  nav .link-list .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .link-list a:hover {
+    background: none;
+    color: rgba(173, 216, 230);
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  i {
+    display: inline-block;
+    color: aliceblue;
+    padding: 26px;
+    visibility: visible;
+    cursor: pointer;
+  }
 }
 /* hamburger end */
 
-
-
 /* header styles end */
-
 
 /* About section start */
 
 .section1 {
-    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Wave-Picture.jpg);
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Wave-Picture.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .about_text_box {
-    background: rgba(173, 216, 230, 0.7);
-    width: 375px;
-    height: 250px;
-    overflow: scroll;
-    box-shadow: 1px 1px 10px lightgray;
-    border-radius: .5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6px 6px 6px 6px;;
+  background: rgba(173, 216, 230, 0.7);
+  width: 375px;
+  height: 250px;
+  overflow: scroll;
+  box-shadow: 1px 1px 10px lightgray;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 6px 6px 6px;
 }
 
 .about_head {
-    margin: 0 33% 5% 0;
-    color: black;
-    font-size: 26px;
-    font-weight: bolder;
-    background: rgba(173, 216, 230, 0.47);
-    box-shadow: 1px 1px 10px lightgray;
-    border-radius: .5em;
-    padding: 6px;
+  margin: 0 33% 5% 0;
+  color: black;
+  font-size: 26px;
+  font-weight: bolder;
+  background: rgba(173, 216, 230, 0.47);
+  box-shadow: 1px 1px 10px lightgray;
+  border-radius: 0.5em;
+  padding: 6px;
 }
 
-@media(max-width:350px) {
-     .about_text_box{
-        width: auto;
-        overflow: scroll;
-    }
+@media (max-width: 350px) {
+  .about_text_box {
+    width: auto;
+    overflow: scroll;
+  }
 }
 /* about section end */
-
-
-
 
 /* project section start*/
 
 .section2 {
-    height: auto;
-    width: auto;
+  height: auto;
+  width: auto;
 }
 
 .projects {
-    padding: 6px;
+  padding: 6px;
 }
 
 .box {
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(173, 216, 230);
-    
+  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(173, 216, 230);
 }
 .projects {
-    height: auto;
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 30px;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
 }
 
 .box {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 400px) {
-    .projects {
-        place-items: center;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-    .box {
-        width: 90%;
-    }
+  .projects {
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .box {
+    width: 90%;
+  }
 }
 
 img {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 10px;
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
 }
-@media(min-width: 1000px){
-    .projects {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 12px;
-    }
+@media (min-width: 1000px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 12px;
+  }
 }
 
 p i {
-    color: white; 
-    margin: 6px;
-    visibility: visible;
+  color: white;
+  margin: 6px;
+  visibility: visible;
 }
-
 
 /* slider bar start */
 
 .box {
-    position: static;
-    overflow: hidden;
+  position: static;
+  overflow: hidden;
 }
 
 .images {
-    display: flex;
+  display: flex;
 }
 .images img {
-    transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 .images input {
-    display: none;
+  display: none;
 }
 
 .dots {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .dots label {
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    border: solid black 3px;
-    cursor: pointer;
-    transition: all .25s ease;
-    margin: 2px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: solid black 3px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin: 2px;
 }
-.dots label:hover {background: rgba(0, 0, 0, 0.5);}
+.dots label:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 #img1:checked ~ .m1 {
-    margin-left: 0;
+  margin-left: 0;
 }
 #img2:checked ~ .m2 {
-    margin-left: -100%;
+  margin-left: -100%;
 }
 #img3:checked ~ .m3 {
-    margin-left: 0;
+  margin-left: 0;
 }
 #img4:checked ~ .m4 {
-    margin-left: -100%;
+  margin-left: -100%;
 }
 #img5:checked ~ .m5 {
-    margin-left: 0;
+  margin-left: 0;
 }
 #img6:checked ~ .m6 {
-    margin-left: -100%;
+  margin-left: -100%;
 }
 #img7:checked ~ .m7 {
-    margin-left: 0;
+  margin-left: 0;
 }
 #img8:checked ~ .m8 {
-    margin-left: -100%;
+  margin-left: -100%;
 }
 #img9:checked ~ .m9 {
-    margin-left: -200%;
+  margin-left: -200%;
 }
 
 /* slider bar end */
 
 /* project end */
 
-
 /* contact section start */
 .section3 {
-    height: auto;
-    width: auto;
+  height: auto;
+  width: auto;
 }
 .contact-head {
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    background-size: cover;
-    color: white;
-    border-radius: 10px;
-    width: 150px;
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 2;
-    box-shadow: 5px 5px 10px rgba(173, 216, 230);
+  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-size: cover;
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 2;
+  box-shadow: 5px 5px 10px rgba(173, 216, 230);
 
-    display: flex;
-    justify-content: center;
-    align-content: center;   
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .heading-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6px;
 }
 
 form {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    background-image: url(./Downloads/blob-haikei\ \(4\).png);
-    background-size: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-image: url(./Downloads/blob-haikei\ \(4\).png);
+  background-size: cover;
 }
 
 dialog {
-    width: 200px;
-    height: 150px;
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px lightgrey;
-    text-align: center;
-    
+  width: 200px;
+  height: 150px;
+  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px lightgrey;
+  text-align: center;
 }
 .btns {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 dialog > div > button {
-    border-radius: 10px;
-    background-color: whitesmoke;
-    padding: 8px 10px 8px 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 8px 10px 8px 10px;
 }
 dialog::backdrop {
-    background-color: rgba(173, 216, 230, 0.32);
+  background-color: rgba(173, 216, 230, 0.32);
 }
 
-
-
 /* contact section end */
-
 
 /* footer start*/
 
 footer {
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
+  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 /* footer end */
 
-
-
 /* text styles start */
-
-
 
 /* nav text styles start */
 .title {
-    font-weight: 900;
-    color: white;
-    font-size: 28px;
-    font-family: 'Raleway';
+  font-weight: 900;
+  color: white;
+  font-size: 28px;
+  font-family: "Raleway";
 }
 
 a:link {
-    color: white;
+  color: white;
 }
 a:visited {
-    color: lightcyan;
+  color: lightcyan;
 }
 a:hover {
-    background-color: rgba(173, 216, 230, 0.47);
-    transition: .5s ease;
-    padding: 6px;
+  background-color: rgba(173, 216, 230, 0.47);
+  transition: 0.5s ease;
+  padding: 6px;
 }
 /* nav text styles end */
-
-
 
 /* About text styles start */
 
 .fa-hand {
-    visibility: visible;
-    color: white;
+  visibility: visible;
+  color: white;
 }
 .about_text_box {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.25;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.25;
 }
 .about_head {
-    font-weight: bolder;
-    font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
 }
 /* About text styles end */
-
-
 
 /* project text styles start */
 
 .project-head {
-    width: 150px;
-    text-align: center;
-    font-size: 36px;
-    line-height: 2;
-    font-weight: bolder; 
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    background-size: cover;
-    color: white;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px rgba(173, 216, 230);
+  width: 150px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 2;
+  font-weight: bolder;
+  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-size: cover;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(173, 216, 230);
 }
 
 .project-text {
-    padding: 8px;
-    border: inset black;
-    border-radius: 10px;
-    font-weight: bolder;
-    line-height: 1.25;
-    color: white;
+  padding: 8px;
+  border: inset black;
+  border-radius: 10px;
+  font-weight: bolder;
+  line-height: 1.25;
+  color: white;
 }
 
-
-
 /* project text styles end */
-
-
 
 /* contact text styles start */
 
 form > input {
-    width: 250px;
-    height: 40px;
-    border: 5px double #082f49;
-    padding-left: 2px;
-    font-size: 18px;
+  width: 250px;
+  height: 40px;
+  border: 5px double #082f49;
+  padding-left: 2px;
+  font-size: 18px;
 }
-@media(max-width: 400px) {
-    form > input {
-        width: 150px;
-    }
+@media (max-width: 400px) {
+  form > input {
+    width: 150px;
+  }
 }
 
 form > textarea {
-    height: 200px;
-    width: 400px;
-    border: 5px double #082f49;
-    padding-left: 2px;
-    font-size: 18px;
-    margin-top: 25px;
+  height: 200px;
+  width: 400px;
+  border: 5px double #082f49;
+  padding-left: 2px;
+  font-size: 18px;
+  margin-top: 25px;
 }
-@media (max-width: 400px){
-    form > textarea{
-        width: auto;
-    }
+@media (max-width: 400px) {
+  form > textarea {
+    width: auto;
+  }
 }
 form > button {
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 900;
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
-    color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(173, 216, 230);
-    width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(173, 216, 230);
+  width: 100px;
 }
 
 dialog > p {
-    color: white;
-    line-height: 1.5;
-    font-size: 18px;
-
+  color: white;
+  line-height: 1.5;
+  font-size: 18px;
 }
 
-
 dialog > div > button {
-    font-size: 16px;
-    font-weight: bolder;
+  font-size: 16px;
+  font-weight: bolder;
 }
 /* contact text styles end */
 
 /* footer text styles start */
 
 footer {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bolder;
-    color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  color: white;
 }
 
 footer > a > i {
-    font-size: 20px;
-    visibility: visible;
-    
+  font-size: 20px;
+  visibility: visible;
 }
 
 footer > p > i {
-    cursor: initial;
-    font-size: 20px;
-    
+  cursor: initial;
+  font-size: 20px;
 }
 
 #foot {
-    line-height: 1.25;
-    padding: 6px 0 8px 0;
+  line-height: 1.25;
+  padding: 6px 0 8px 0;
 }
-
 
 /* footer text styles end */
 
-
 /* text styles end */
-
-

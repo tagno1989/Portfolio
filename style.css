@@ -209,6 +209,8 @@ i {
 @media (max-width: 400px) {
     .projects {
         place-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     .box {
         width: 90%;
@@ -422,7 +424,15 @@ a:hover {
     visibility: visible;
     color: white;
 }
-
+.about_text_box {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.25;
+    padding-top: 10%;
+}
+.about_head {
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
 /* About text styles end */
 
 
@@ -465,6 +475,11 @@ form > input {
     border: 5px double #082f49;
     padding-left: 2px;
     font-size: 18px;
+}
+@media(max-width: 400px) {
+    form > input {
+        width: 150px;
+    }
 }
 
 form > textarea {
@@ -512,17 +527,23 @@ footer {
     font-size: 24px;
     font-weight: bolder;
     color: white;
-    line-height: 1.5;
 }
 
 footer > a > i {
     font-size: 20px;
     visibility: visible;
+    
 }
 
 footer > p > i {
     cursor: initial;
     font-size: 20px;
+    
+}
+
+#foot {
+    line-height: 1.25;
+    padding: 6px 0 8px 0;
 }
 
 

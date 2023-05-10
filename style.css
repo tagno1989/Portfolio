@@ -3,9 +3,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-body{
-    width: 100vw;
-}
+
 
 body::-webkit-scrollbar-track {
     background: black;
@@ -27,11 +25,11 @@ section {
     height: 100vh;
     width: 100vw;  
 }
+/* sticky footer */
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    /* background: rgba(173, 216, 230, 0.47); */
     background: #bfdbfe;
 }
 main {
@@ -168,11 +166,10 @@ i {
     padding: 6px;
 }
 
-@media(max-width:425px) {
+@media(max-width:350px) {
      .about_text_box{
         width: auto;
     }
-    
 }
 /* about section end */
 
@@ -198,7 +195,7 @@ i {
     
 }
 .projects {
-    height: 100%;
+    height: auto;
     width: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -208,6 +205,14 @@ i {
 .box {
     width: 100%;
     height: auto;
+}
+@media (max-width: 400px) {
+    .projects {
+        place-items: center;
+    }
+    .box {
+        width: 90%;
+    }
 }
 
 img {
@@ -393,6 +398,7 @@ footer {
     font-weight: 900;
     color: white;
     font-size: 28px;
+    font-family: 'Raleway';
 }
 
 a:link {
@@ -469,7 +475,11 @@ form > textarea {
     font-size: 18px;
     margin-top: 25px;
 }
-
+@media (max-width: 400px){
+    form > textarea{
+        width: auto;
+    }
+}
 form > button {
     padding: 10px;
     font-size: 18px;
@@ -517,6 +527,7 @@ footer > p > i {
 
 
 /* footer text styles end */
+
 
 /* text styles end */
 

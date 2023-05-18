@@ -27,13 +27,13 @@
     <header>
       <nav class="nav">
         <h1 class="title">Jacob Warren's Portfolio</h1>
-        <!-- links /  hamburger !!!NEEDS FIX FOR IPHONE GLITCH!!! -->
+        <!-- links /  hamburger -->
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="link-list">
-          <a href="#About">About</a>
-          <a href="#Project">Projects</a>
-          <a href="#Contact">Contact</a>
-          <a href="#foot">Bottom</a>
+          <a id="about" href="#About">About</a>
+          <a id="project" href="#Project">Projects</a>
+          <a id="contact" href="#Contact">Contact</a>
+          <!-- <a class="link" href="#foot">Bottom</a> -->
           <a href="https://github.com/tagno1989">
             <i class="devicon-github-original"></i>
           </a>
@@ -64,6 +64,7 @@
         </div>
       </section>
       <!-- Projects -->
+      <!-- !!!NEEDS BETTER PROJECTS, PLACEHOLDERS FOR NOW!!! -->
       <section class="section2" id="Project">
         <div class="heading-div">
           <h3 class="project-head">Projects</h3>
@@ -215,23 +216,28 @@
           </div>
         </div>
       </section>
-      <!-- Contact -->
+      <!-- Contact/ !!! MODAL? !!!-->
       <section class="section3" id="Contact">
         <div class="heading-div">
           <h4 class="contact-head">Contact</h4>
         </div>
         <form action="https://formspree.io/f/mlekzzgr" method="POST">
-          <input type="text" name="Name" placeholder="Full Name" required />
-          <input type="email" name="Email" placeholder="Email" required />
+          <input type="text" name="Name" placeholder="Full Name" required/>
+          <input type="email" name="Email" placeholder="Email" required/>
           <textarea name="Message" placeholder="Message" required></textarea>
-          <button data-open-modal type="button">Send</button>
+          <button type="submit">Submit</button>
+          <!--!!!MODAL OVERRIDING BROWSERS ERROR MESSAGES!!! FIX?  -->
+
+          <!-- <button data-open-modal type="button">Send</button>
           <dialog data-modal>
             <p class="modal-text">Send a message?</p>
             <div class="btns">
-              <button data-close-modal type="button">Cancel</button>
+              <button data-close-modal type="reset">Cancel</button>
               <button type="submit">Send</button>
             </div>
-          </dialog>
+          </dialog> -->
+
+
         </form>
       </section>
     </main>

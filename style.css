@@ -70,9 +70,7 @@ nav .closeMenu {
   display: none;
   cursor: pointer;
 }
-i {
-  visibility: hidden;
-}
+
 @media (max-width: 800px) {
   .title {
     padding-top: 2px;

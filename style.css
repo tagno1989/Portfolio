@@ -267,6 +267,10 @@ p i {
 #img4:checked ~ .m4 {
   margin-left: -100%;
 }
+#imgfour:checked ~ .mfour {
+  margin-left:-200%;
+}
+
 #img5:checked ~ .m5 {
   margin-left: 0;
 }
@@ -325,8 +329,8 @@ form {
   background-image: url(./Downloads/blob-haikei\ \(4\).png);
   background-size: cover;
 }
-
-dialog {
+/* !!! modal !!! */
+/* dialog {
   width: 200px;
   height: 150px;
   background-image: url(./Downloads/blurry-gradient-haikei.png);
@@ -350,7 +354,7 @@ dialog > div > button {
 }
 dialog::backdrop {
   background-color: rgba(173, 216, 230, 0.32);
-}
+} */
 
 /* contact section end */
 

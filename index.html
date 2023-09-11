@@ -91,8 +91,9 @@
               <label for="img2"></label>
             </div>
             <p class="project-text">
-              All JS and CSS, HTML created with JS functions, CSS is mainly layout and setup.  Project centers around JS,
-              and the usage of vite to scaffold, host my website locally with speed thanks to hmr, and build.   
+              First project built with a package manger, vite is used in this project. 
+              Project is a simple restaurant landing page undertaken to learn and develop with PMS and NPM.
+              JS is main language and highlighted throughout the project.  
               <a href="https://github.com/tagno1989/vite-restaurant-app">
                 <i class="devicon-github-original"></i>
               </a>
@@ -223,26 +224,25 @@
           </div>
         </div>
       </section>
-      <!-- Contact/ !!! MODAL? !!!-->
+      <!-- Contact/ MODAL-->
       <section class="section3" id="Contact">
         <div class="heading-div">
           <h4 class="contact-head">Contact</h4>
         </div>
-        <form action="https://formspree.io/f/mlekzzgr" method="POST">
-          <input type="text" name="Name" placeholder="Full Name" required/>
-          <input type="email" name="Email" placeholder="Email" required/>
-          <textarea name="Message" placeholder="Message" required></textarea>
-          <button type="submit">Submit</button>
-          <!--!!!MODAL OVERRIDING BROWSERS ERROR MESSAGES!!! FIX?  -->
+        <form id="contact-form" action="https://formspree.io/f/mlekzzgr" method="POST">
+          <input type="text" id="nameX" name="name" placeholder="Full Name" pattern="^[a-zA-Z ]+$" required/>
+          <input type="email" id="email" name="email" placeholder="Email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required/>
+          <textarea type="text" id="message" name="message" placeholder="Message" required></textarea>
+          <!-- <button type="submit">Submit</button> -->
 
-          <!-- <button data-open-modal type="button">Send</button>
+          <button data-open-modal type="button">Submit</button>
           <dialog data-modal>
-            <p class="modal-text">Send a message?</p>
+            <p class="modal-text">Send with FormSpree?</p>
             <div class="btns">
-              <button data-close-modal type="reset">Cancel</button>
-              <button type="submit">Send</button>
+              <button data-close-modal type="reset">X</button>
+              <button id="submit">Send</button>
             </div>
-          </dialog> -->
+          </dialog>
 
 
         </form>
@@ -251,7 +251,7 @@
     <!-- Footer -->
     <footer id="foot">
       <h6>Jacob Warren</h6>
-      <p>Front-End Web Developer</p>
+      <p>Web Development</p>
       <p>
         <i class="fa-regular fa-envelope"></i>
         jwarren2000@verizon.net

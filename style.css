@@ -29,7 +29,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: #bfdbfe;
+  background: hsla(213, 97%, 87%, 0.925);
 }
 main {
   flex: 1;
@@ -162,7 +162,7 @@ nav .closeMenu {
 }
 /* about section end */
 
-/* project section start*/
+/* projects section start*/
 
 .section2 {
   height: auto;
@@ -189,7 +189,7 @@ nav .closeMenu {
 
 .box {
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
 @media (max-width: 400px) {
   .projects {
@@ -222,7 +222,7 @@ p i {
   visibility: visible;
 }
 
-/* slider bar start */
+/* slide select start */
 
 .box {
   position: static;
@@ -287,9 +287,9 @@ p i {
   margin-left: -200%;
 }
 
-/* slider bar end */
+/* slid select end */
 
-/* project end */
+/* projects end */
 
 /* contact section start */
 .section3 {
@@ -330,13 +330,14 @@ form {
   background-size: cover;
 }
 /* !!! modal !!! */
-/* dialog {
+dialog {
   width: 200px;
   height: 150px;
   background-image: url(./Downloads/blurry-gradient-haikei.png);
   border-radius: 10px;
   box-shadow: 5px 5px 10px lightgrey;
   text-align: center;
+  overflow: hidden;
 }
 .btns {
   height: 100%;
@@ -345,6 +346,7 @@ form {
   align-content: center;
   flex-wrap: wrap;
   gap: 12px;
+  margin-bottom: 2px;
 }
 
 dialog > div > button {
@@ -354,7 +356,8 @@ dialog > div > button {
 }
 dialog::backdrop {
   background-color: rgba(173, 216, 230, 0.32);
-} */
+}
+
 
 /* contact section end */
 
@@ -373,7 +376,9 @@ footer {
 
 /* footer end */
 
-/* text styles start */
+
+
+/* TEXT STYLE START */
 
 /* nav text styles start */
 .title {
@@ -382,22 +387,29 @@ footer {
   font-size: 28px;
   font-family: "Raleway";
 }
-
+a, .fa-download{
+  transition: all 1s ease-in-out;
+}
 a:link {
   color: white;
 }
 a:visited {
   color: lightcyan;
 }
-a:hover {
+a:hover :not(.fa-download) {
   background-color: rgba(173, 216, 230, 0.47);
-  transition: 0.5s ease;
-  padding: 6px;
+  border-radius: 50%;
+  padding: 4px;
 }
+
 /* nav text styles end */
 
 /* About text styles start */
-
+.fa-download:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  padding: 4px;
+}
 .fa-hand {
   visibility: visible;
   color: white;
@@ -433,6 +445,7 @@ a:hover {
   border-radius: 10px;
   font-weight: bolder;
   line-height: 1.25;
+  font-size: 1em;
   color: white;
 }
 
@@ -486,6 +499,7 @@ dialog > p {
 dialog > div > button {
   font-size: 16px;
   font-weight: bolder;
+  margin-bottom: 2px;
 }
 /* contact text styles end */
 

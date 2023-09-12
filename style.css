@@ -387,7 +387,7 @@ footer {
   font-size: 28px;
   font-family: "Raleway";
 }
-a, .fa-download{
+a, i{
   transition: all 1s ease-in-out;
 }
 a:link {
@@ -396,7 +396,7 @@ a:link {
 a:visited {
   color: lightcyan;
 }
-a:hover :not(.fa-download) {
+a:hover:not(.fa-download) {
   background-color: rgba(173, 216, 230, 0.47);
   border-radius: 50%;
   padding: 4px;

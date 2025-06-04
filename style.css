@@ -36,6 +36,7 @@ main {
 }
 /* dev styles end */
 
+/* MAIN STYLES */
 /* header styles start */
 .nav {
   display: flex;
@@ -50,7 +51,7 @@ main {
 }
 
 header {
-  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-image: url(./public/images/blurry-gradient-haikei.png);
   background-size: cover;
   box-shadow: 5px 5px 10px lightgrey;
   position: sticky;
@@ -86,7 +87,7 @@ nav .closeMenu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./Downloads/blurry-gradient-haikei.png);
+    background-image: url(./public/images/blurry-gradient-haikei.png);
     background-size: cover;
     transition: top 1s ease;
     display: none;
@@ -174,7 +175,7 @@ nav .closeMenu {
 }
 
 .box {
-  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-image: url(./public/images/blurry-gradient-haikei.png);
   background-size: cover;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(173, 216, 230);
@@ -202,7 +203,7 @@ nav .closeMenu {
   }
 }
 
-img {
+img, video {
   display: block;
   height: auto;
   width: 100%;
@@ -258,7 +259,7 @@ p i {
 #img1:checked ~ .m1 {
   margin-left: 0;
 }
-#img2:checked ~ .m2 {
+#vid2:checked ~ .m2 {
   margin-left: -100%;
 }
 #img3:checked ~ .m3 {
@@ -267,14 +268,14 @@ p i {
 #img4:checked ~ .m4 {
   margin-left: -100%;
 }
-#imgfour:checked ~ .mfour {
+#img4a:checked ~ .m4a {
   margin-left:-200%;
 }
 
 #img5:checked ~ .m5 {
   margin-left: 0;
 }
-#img6:checked ~ .m6 {
+#vid6:checked ~ .m6 {
   margin-left: -100%;
 }
 #img7:checked ~ .m7 {
@@ -297,7 +298,7 @@ p i {
   width: auto;
 }
 .contact-head {
-  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-image: url(./public/images/blurry-gradient-haikei.png);
   background-size: cover;
   color: white;
   border-radius: 10px;
@@ -326,14 +327,14 @@ form {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background-image: url(./Downloads/blob-haikei\ \(4\).png);
+  background-image: url(./public/images/blob-haikei\ \(4\).png);
   background-size: cover;
 }
 /* !!! modal !!! */
 dialog {
   width: 200px;
   height: 150px;
-  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-image: url(./public/images/blurry-gradient-haikei.png);
   border-radius: 10px;
   box-shadow: 5px 5px 10px lightgrey;
   text-align: center;
@@ -358,13 +359,10 @@ dialog::backdrop {
   background-color: rgba(173, 216, 230, 0.32);
 }
 
-
 /* contact section end */
-
-/* footer start*/
-
+/* footer styles start */
 footer {
-  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-image: url(./public/images/blurry-gradient-haikei.png);
   background-size: cover;
   height: 100%;
   display: flex;
@@ -373,13 +371,10 @@ footer {
   justify-content: center;
   gap: 6px;
 }
+/* footer styles end */
+/* MAIN STYLE END */
 
-/* footer end */
-
-
-
-/* TEXT STYLE START */
-
+/* STiiLYY TEXT STYLE START */
 /* nav text styles start */
 .title {
   font-weight: 900;
@@ -432,7 +427,7 @@ a:hover:not(.fa-download) {
   font-size: 36px;
   line-height: 2;
   font-weight: bolder;
-  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-image: url(./public/images/blurry-gradient-haikei.png);
   background-size: cover;
   color: white;
   border-radius: 15px;
@@ -483,7 +478,7 @@ form > button {
   padding: 10px;
   font-size: 18px;
   font-weight: 900;
-  background-image: url(./Downloads/blurry-gradient-haikei.png);
+  background-image: url(./public/images/blurry-gradient-haikei.png);
   color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(173, 216, 230);
@@ -526,7 +521,6 @@ footer > p > i {
   line-height: 1.25;
   padding: 6px 0 8px 0;
 }
-
 /* footer text styles end */
 
 /* text styles end */
